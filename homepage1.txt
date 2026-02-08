@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRUERP - Smart ERP</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8fbff;
+      color: #1f2d3d;
+    }
+
+    /* Navbar */
+    header {
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: 14px;
+      margin: 20px;
+      padding: 18px 40px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 22px;
+      color: #0b4a7d;
+    }
+
+    .logo span {
+      color: #f59e0b;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: #0b4a7d;
+      font-weight: 600;
+    }
+
+    .btn-demo {
+      background: #0b4a7d;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+    }
+
+    .hero-left {
+      max-width: 50%;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #eaf4ff;
+      color: #0b4a7d;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .hero-left h1 {
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero-left h1 span {
+      color: #0b4a7d;
+    }
+
+    .hero-left p {
+      color: #555;
+      margin-bottom: 35px;
+      max-width: 500px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .btn-primary {
+      background: #0b4a7d;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-video {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #0b4a7d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Right */
+    .hero-right img {
+      width: 520px;
+      max-width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-left {
+        max-width: 100%;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">TRU<span>ERP</span></div>
+
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="btn-demo">Try Demo</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge">⚙️ Working for your success</div>
+
+      <h1>
+        Smart ERP for the<br/>
+        Manufacturing &<br/>
+        <span>Mechanical Industry!</span>
+      </h1>
+
+      <p>
+        The TRUERP team – Powering India's Manufacturing Eco System.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">DOWNLOAD BROCHURE</a>
+        <a href="#" class="btn-video">▶ Play Video</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Replace this with your illustration image -->
+      <img src="C:\Users\Sanika Mokale\Downloads\tron1.jpeg" alt="ERP Illustration">
+    </div>
+  </section>
+
+</body>
+</html>
