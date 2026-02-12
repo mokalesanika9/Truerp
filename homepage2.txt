@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRUERP - Smart ERP</title>
+`
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8fbff;
+      color: #1f2d3d;
+    }
+
+    /* Navbar */
+    header {
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: 14px;
+      margin: 20px;
+      padding: 18px 40px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 22px;
+      color: #0b4a7d;
+    }
+
+    .logo span {
+      color: #f59e0b;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: #0b4a7d;
+      font-weight: 600;
+    }
+
+    .btn-demo {
+      background: #0b4a7d;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+    }
+
+    .hero-left {
+      max-width: 50%;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #eaf4ff;
+      color: #0b4a7d;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .hero-left h1 {
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero-left h1 span {
+      color: #0b4a7d;
+    }
+
+    .hero-left p {
+      color: #555;
+      margin-bottom: 35px;
+      max-width: 500px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .btn-primary {
+      background: #0b4a7d;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-video {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #0b4a7d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero Right */
+    .hero-right img {
+      width: 520px;
+      max-width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-left {
+        max-width: 100%;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">TRU<span>ERP</span></div>
+
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="btn-demo">Try Demo</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge">⚙️ Working for your success</div>
+
+      <h1>
+        Smart ERP for the<br/>
+        Manufacturing &<br/>
+        <span>Mechanical Industry!</span>
+      </h1>
+
+      <p>
+        The TRUERP team – Powering India's Manufacturing Eco System.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">DOWNLOAD BROCHURE</a>
+        <a href="#" class="btn-video">▶ Play Video</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Replace this with your illustration image -->
+      <img src="C:\Users\Sanika Mokale\Downloads\tron1.jpeg" alt="ERP Illustration">
+    </div>
+  </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>More About Us – TRUERP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #1e2a39;
+    }
+
+    /* ====== ABOUT SECTION ====== */
+    .about-section {
+      padding: 80px 70px;
+    }
+
+    .about-container {
+      display: flex;
+      gap: 70px;
+      align-items: center;
+    }
+
+    /* ===== LEFT CONTENT ===== */
+    .about-left {
+      flex: 1;
+    }
+
+    .about-left h5 {
+      color: #0b4a7c;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .about-left h1 {
+      font-size: 40px;
+      line-height: 1.35;
+      margin-bottom: 22px;
+      color: #1e2a39;
+    }
+
+    .about-left p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 620px;
+    }
+
+    /* ===== FEATURES LIST ===== */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 50px;
+      row-gap: 18px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: #1e2a39;
+    }
+
+    .feature-item span {
+      background: #0b4a7c;
+      color: #fff;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 13px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ===== RIGHT IMAGES ===== */
+    .about-right {
+      flex: 1;
+      position: relative;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .main-img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .overlay-img {
+      width: 48%;
+      position: absolute;
+      left: -40px;
+      bottom: 80px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      border: 6px solid #fff;
+    }
+
+    /* ===== EXPERIENCE CARD ===== */
+    .experience-card {
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      background: #0b4a7c;
+      color: #fff;
+      padding: 26px 30px;
+      border-radius: 18px;
+      width: 220px;
+    }
+
+    .experience-card h2 {
+      font-size: 36px;
+      margin-bottom: 4px;
+    }
+
+    .experience-card span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .experience-card p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-top: 6px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 992px) {
+      .about-container {
+        flex-direction: column;
+      }
+
+      .overlay-img {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .experience-card {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-section">
+    <div class="about-container">
+
+      <!-- LEFT -->
+      <div class="about-left">
+        <h5>MORE ABOUT US</h5>
+
+        <h1>
+          Powering Efficiency. Driving Growth.<br>
+          Simplifying Operations.
+        </h1>
+
+        <p>
+          TRUERP is a next-generation ERP solution built specifically for the
+          mechanical and manufacturing sector. It brings every part of your
+          business – from quotations to payroll – into one smart, automated,
+          and data-driven platform.
+        </p>
+
+        <div class="features">
+          <div class="feature-item"><span>✓</span>Centralized Data Management</div>
+          <div class="feature-item"><span>✓</span>Automation of Processes</div>
+
+          <div class="feature-item"><span>✓</span>Accuracy & Error Reduction</div>
+          <div class="feature-item"><span>✓</span>Enhanced Security</div>
+
+          <div class="feature-item"><span>✓</span>Real-Time Insights</div>
+          <div class="feature-item"><span>✓</span>Audit & Traceability</div>
+
+          <div class="feature-item"><span>✓</span>Improved Collaboration</div>
+          <div class="feature-item"><span>✓</span>Integration with Other Systems</div>
+
+          <div class="feature-item"><span>✓</span>Scalability</div>
+          <div class="feature-item"><span>✓</span>Professional Reporting & Analytics</div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="about-right">
+        <div class="image-wrapper">
+          <img
+            src="C:\Users\Sanika Mokale\Downloads\hm2 ss.jpeg"
+            class="main-img"
+            alt="Manufacturing">
+
+
+          <div class="experience-card">
+            <h2>15+ <span>Years</span></h2>
+            <p>Of experience in business service</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
