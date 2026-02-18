@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Login Layout</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Login Card */
+.login-box {
+    width: 350px;
+    background: #ffffff;
+    margin-right: 80px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #2e6bbd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2e6bbd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1f4f91;
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: center;
+    }
+
+    .login-box {
+        margin-right: 0;
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <div class="input-box">
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Password">
+    </div>
+
+    <button>Sign In</button>
+</div>
+
+</body>
+</html>
