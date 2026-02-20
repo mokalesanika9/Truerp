@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Finance Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    background:#e9e9e9;
+}
+
+/* ===== Sidebar ===== */
+.sidebar{
+    width:240px;
+    height:100vh;
+    background:#0f2d3d;
+    color:white;
+    position:fixed;
+}
+
+.sidebar h2{
+    padding:20px;
+    background:#0b2230;
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:12px 20px;
+    font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    cursor:pointer;
+}
+
+.sidebar ul li:hover{
+    background:#163e55;
+}
+
+.sidebar ul li i{
+    margin-right:10px;
+}
+
+/* ===== Main ===== */
+.main{
+    margin-left:240px;
+    width:calc(100% - 240px);
+}
+
+/* ===== Topbar ===== */
+.topbar{
+    height:60px;
+    background:#2c6fb7;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    color:white;
+}
+
+.topbar .right span{
+    margin-left:20px;
+    font-size:14px;
+}
+
+/* ===== Content ===== */
+.content{
+    padding:30px;
+}
+
+.banner{
+    background:#166a0a;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:22px;
+    border-radius:6px;
+    margin-bottom:25px;
+}
+
+/* ===== Table ===== */
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+thead{
+    background:#2b66b3;
+    color:white;
+}
+
+thead th{
+    padding:12px 8px;
+    font-size:13px;
+    border-right:1px solid rgba(255,255,255,0.3);
+}
+
+tbody td{
+    padding:12px 8px;
+    font-size:13px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f3f3f3;
+}
+
+tbody td:first-child{
+    font-weight:bold;
+}
+
+.total-row{
+    background:#2b66b3;
+    color:white;
+    font-weight:bold;
+}
+
+.total-row td{
+    border:none;
+    padding:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>Admin</h2>
+    <ul>
+        <li><i class="fas fa-chart-line"></i>Finance Dashboard</li>
+        <li><i class="fas fa-chart-pie"></i>General Dashboard</li>
+        <li><i class="fas fa-brain"></i>AI Features</li>
+        <li><i class="fas fa-book"></i>Ledger</li>
+        <li><i class="fas fa-money-bill"></i>Expenses</li>
+        <li><i class="fas fa-truck"></i>Supplier Payment</li>
+        <li><i class="fas fa-file-invoice"></i>Invoice</li>
+        <li><i class="fas fa-users"></i>Users</li>
+        <li><i class="fas fa-sack-dollar"></i>Salary</li>
+        <li><i class="fas fa-cogs"></i>Engineering</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+        <div>☰</div>
+        <div class="right">
+            <span>FY: 2025-26</span>
+            <span>SO</span>
+            <span>PO</span>
+            <span>GRR</span>
+            <span>Invoices</span>
+            <span>Purchase Bills</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="banner">
+            Financial Year is set to : 2025-2026
+        </div>
+
+        <div class="table-container">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Month</th>
+                    <th>Month Wise Sales</th>
+                    <th>Month Wise Purchase</th>
+                    <th>Expenses</th>
+                    <th>Monthly Salary</th>
+                    <th>GST</th>
+                    <th>Month Wise Payment Received</th>
+                    <th>Month Wise Supplier Paid Payment</th>
+                    <th>Month Wise Supplier Balance Payment</th>
+                    <th>Month Wise Profit</th>
+                    <th>Profit in %</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><td>1</td><td>April 2025</td><td>38,07,931</td><td>37,80,146</td><td>0</td><td>0</td><td>4,37,693</td><td>1,67,22,144</td><td>16,76,959</td><td>20,95,221</td><td>-4,09,908</td><td>-11</td></tr>
+                <tr><td>2</td><td>May 2025</td><td>23,25,084</td><td>40,52,357</td><td>0</td><td>0</td><td>2,73,254</td><td>33,39,459</td><td>5,75,296</td><td>34,77,061</td><td>-20,00,527</td><td>-86</td></tr>
+                <tr><td>3</td><td>June 2025</td><td>37,19,037</td><td>57,419</td><td>0</td><td>0</td><td>5,67,257</td><td>11,44,875</td><td>44,675</td><td>12,744</td><td>30,94,361</td><td>83</td></tr>
+                <tr><td>4</td><td>July 2025</td><td>20,59,262</td><td>0</td><td>0</td><td>0</td><td>3,13,988</td><td>27,94,317</td><td>0</td><td>0</td><td>17,45,274</td><td>85</td></tr>
+                <tr><td>5</td><td>August 2025</td><td>47,78,714</td><td>0</td><td>0</td><td>0</td><td>7,28,956</td><td>69,79,741</td><td>0</td><td>0</td><td>40,49,758</td><td>85</td></tr>
+                <tr><td>6</td><td>September 2025</td><td>79,48,642</td><td>0</td><td>0</td><td>0</td><td>12,03,311</td><td>8,65,739</td><td>0</td><td>0</td><td>67,45,331</td><td>85</td></tr>
+                <tr><td>7</td><td>October 2025</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>8</td><td>November 2025</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>9</td><td>December 2025</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>10</td><td>January 2026</td><td>0</td><td>0</td><td>1,00,000</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>-1,00,000</td><td>0</td></tr>
+                <tr><td>11</td><td>February 2026</td><td>0</td><td>0</td><td>13,000</td><td>12,587</td><td>0</td><td>0</td><td>0</td><td>0</td><td>-25,587</td><td>0</td></tr>
+                <tr><td>12</td><td>March 2026</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+
+                <tr class="total-row">
+                    <td colspan="2">TOTAL</td>
+                    <td>2,46,38,670</td>
+                    <td>78,89,922</td>
+                    <td>1,13,000</td>
+                    <td>12,587</td>
+                    <td>35,24,459</td>
+                    <td>3,18,46,275</td>
+                    <td>22,96,930</td>
+                    <td>55,85,026</td>
+                    <td>1,30,98,702</td>
+                    <td>53</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
